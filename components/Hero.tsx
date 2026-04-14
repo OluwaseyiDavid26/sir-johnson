@@ -1073,7 +1073,7 @@ function LeftContent({ isLight }: { isLight: boolean }) {
         style={{ animationDelay: "0.45s" }}
       >
         <Link
-          href="/#portfolio"
+          href="/#services"
           className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all hover:-translate-y-px cursor-pointer"
           style={{ fontFamily: "'Outfit', sans-serif" }}
         >

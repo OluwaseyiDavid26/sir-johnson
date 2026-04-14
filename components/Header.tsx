@@ -167,7 +167,7 @@ export default function Header() {
             <Link
               target="_self"
               className="p-[15px] hover:px-[20px] hover:mr-1 text-zinc-600 hover:text-zinc-900 relative group transition-all duration-[300ms] hover:bg-[#ededed]/20 rounded-[15px]"
-              href="/services"
+              href="/#services"
             >
               <i className="fa-solid fa-briefcase text-[20px]"></i>
               <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-3 py-1 bg-zinc-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">

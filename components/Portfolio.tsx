@@ -351,7 +351,10 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-white dark:bg-[#090f1e] pt-32 pb-24 px-6">
+    <main
+      id="services"
+      className="min-h-screen bg-white dark:bg-[#090f1e] pt-32 pb-24 px-6"
+    >
       <div className="max-w-5xl mx-auto">
         {/* ── Page Header ── */}
         <div className="mb-20">
