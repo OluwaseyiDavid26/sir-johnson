@@ -159,7 +159,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/1BwusHHAupwvbHDikguVrvTNoVVwuu71X",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/10SJ0rfr2RmwjEIFL-y7BQv1sRjw1VdcQ",
+      "https://lh3.googleusercontent.com/d/1SnfLxZzTKw2AAKVZSOLbBR7HaRWPgA8g",
   },
   {
     title: "Anmut Website",
@@ -181,7 +181,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/19XJmkvJ0Djk2PuIse2VLXabOGPIfdcqA",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/1_NsB7Z4VOQPAgYbqWAVGIA7VVmA6DDKz",
+      "https://lh3.googleusercontent.com/d/10SJ0rfr2RmwjEIFL-y7BQv1sRjw1VdcQ",
   },
   {
     title: "Square Farms's Website",
@@ -202,6 +202,6 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/1NX5Qg-9I7qWGss109ciDBoDYepEaAW-f",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/1SnfLxZzTKw2AAKVZSOLbBR7HaRWPgA8g",
+      "https://lh3.googleusercontent.com/d/1_NsB7Z4VOQPAgYbqWAVGIA7VVmA6DDKz",
   },
 ];
