@@ -895,12 +895,12 @@ export default function Hero() {
       `}</style>
 
       <section
-        className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-10"
+        className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-5 md:px-10"
         style={{
           background: isLight ? "#f0f4ff" : "#090f1e",
           fontFamily: "'Outfit', sans-serif",
-          paddingTop: "140px",
-          paddingBottom: "80px",
+          paddingTop: "100px",
+          paddingBottom: "60px",
           transition: "background 0.4s ease",
         }}
       >
@@ -938,13 +938,13 @@ export default function Hero() {
           }}
         />
 
-        {/* Main grid */}
+        {/* Main layout — stacked on mobile, side-by-side on desktop */}
         <div
-          className="relative z-10 w-full max-w-5xl mx-auto grid items-center gap-16"
+          className="relative z-10 w-full max-w-5xl mx-auto flex flex-col-reverse md:grid md:items-center gap-10 md:gap-16"
           style={{ gridTemplateColumns: "1fr 380px" }}
         >
           {/* ── LEFT ── */}
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col gap-6 md:gap-7">
             {/* Eyebrow */}
             <div
               className="hero-fade-up flex items-center gap-3 tracking-widest text-xs text-blue-400"
@@ -962,7 +962,7 @@ export default function Hero() {
               <span
                 className="block italic font-bold text-blue-400 mb-2"
                 style={{
-                  fontSize: "clamp(15px, 1.6vw, 21px)",
+                  fontSize: "clamp(14px, 1.6vw, 21px)",
                   fontFamily: "'Playfair Display', serif",
                 }}
               >
@@ -971,7 +971,7 @@ export default function Hero() {
               <h1
                 className="m-0 leading-none tracking-tight"
                 style={{
-                  fontSize: "clamp(36px, 4.2vw, 58px)",
+                  fontSize: "clamp(32px, 6vw, 58px)",
                   fontWeight: 900,
                   fontFamily: "'Playfair Display', serif",
                   color: isLight ? "#0f172a" : "#ffffff",
@@ -983,7 +983,7 @@ export default function Hero() {
               <p
                 className="mt-3 mb-0 leading-snug font-normal"
                 style={{
-                  fontSize: "clamp(14px, 1.4vw, 19px)",
+                  fontSize: "clamp(13px, 1.4vw, 19px)",
                   color: isLight ? "#334155" : "#c8d3e8",
                   transition: "color 0.4s ease",
                 }}
@@ -1029,9 +1029,9 @@ export default function Hero() {
               ].map((chip) => (
                 <span
                   key={chip.label}
-                  className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 tracking-wider"
+                  className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 tracking-wider"
                   style={{
-                    fontSize: 12,
+                    fontSize: 11,
                     fontFamily: "'DM Mono', monospace",
                     background: isLight
                       ? "rgba(37,99,235,0.07)"
@@ -1057,7 +1057,7 @@ export default function Hero() {
             >
               <Link
                 href="/#portfolio"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all hover:-translate-y-px cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all hover:-translate-y-px cursor-pointer"
                 style={{ fontFamily: "'Outfit', sans-serif" }}
               >
                 <i className="fa-solid fa-briefcase text-xs" />
@@ -1068,7 +1068,7 @@ export default function Hero() {
                 href="https://drive.google.com/uc?export=download&id=1x15lcT3SKcAxV0cMQH_mFFbTme814Gjm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-medium transition-all cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all cursor-pointer"
                 style={{
                   fontFamily: "'Outfit', sans-serif",
                   color: isLight ? "#334155" : "#c8d3e8",
@@ -1104,7 +1104,7 @@ export default function Hero() {
               style={{
                 border: `0.5px solid ${isLight ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.07)"}`,
                 background: isLight ? "#dde6f5" : "#101828",
-                height: 340,
+                height: "clamp(240px, 45vw, 340px)",
                 transition: "all 0.4s ease",
               }}
             >
@@ -1115,7 +1115,7 @@ export default function Hero() {
               />
             </div>
 
-            {/* ── Availability badge only ── */}
+            {/* Availability badge */}
             <div
               className="rounded-2xl px-4 py-3 flex items-center gap-3"
               style={{
