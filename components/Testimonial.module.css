@@ -1,0 +1,346 @@
+/* .bg-grid {
+    background-image: linear-gradient(90deg, rgb(var(--color-bg-grid)) 1px, transparent 0), repeating-linear-gradient(180deg, rgb(var(--color-bg-grid)), rgb(var(--color-bg-grid)) 1px, transparent 0, transparent calc(var(--column-scale) / var(--column-count)));
+    background-size: calc(calc(var(--column-scale)) / var(--column-count)), 100%;
+    background-position-x: -1px
+}
+
+.bg-grid.medium {
+    background-size: calc(calc(var(--column-scale)) / 16), 100%;
+    background-position-x: -1px
+}
+
+.bg-grid-border {
+    --color-bg-grid: var(--color-border)
+}
+
+.bg-grid-purple-100 {
+    --color-bg-grid: var(--color-purple-100)
+}
+
+.bg-grid-purple-200 {
+    --color-bg-grid: var(--color-purple-200)
+}
+
+.bg-grid-purple-300 {
+    --color-bg-grid: var(--color-purple-300)
+}
+
+.bg-grid-purple-400 {
+    --color-bg-grid: var(--color-purple-400)
+}
+
+.bg-grid-purple-500 {
+    --color-bg-grid: var(--color-purple-500)
+}
+
+.bg-grid-purple-600 {
+    --color-bg-grid: var(--color-purple-600)
+}
+
+.bg-grid-purple-700 {
+    --color-bg-grid: var(--color-purple-700)
+}
+
+.bg-grid-purple-800 {
+    --color-bg-grid: var(--color-purple-800)
+}
+
+.bg-grid-purple-900 {
+    --color-bg-grid: var(--color-purple-900)
+}
+
+.bg-grid-blue-100 {
+    --color-bg-grid: var(--color-blue-100)
+}
+
+.bg-grid-blue-200 {
+    --color-bg-grid: var(--color-blue-200)
+}
+
+.bg-grid-blue-300 {
+    --color-bg-grid: var(--color-blue-300)
+}
+
+.bg-grid-blue-400 {
+    --color-bg-grid: var(--color-blue-400)
+}
+
+.bg-grid-blue-500 {
+    --color-bg-grid: var(--color-blue-500)
+}
+
+.bg-grid-blue-600 {
+    --color-bg-grid: var(--color-blue-600)
+}
+
+.bg-grid-blue-700 {
+    --color-bg-grid: var(--color-blue-700)
+}
+
+.bg-grid-blue-800 {
+    --color-bg-grid: var(--color-blue-800)
+}
+
+.bg-grid-blue-900 {
+    --color-bg-grid: var(--color-blue-900)
+}
+
+.bg-grid-pink-100 {
+    --color-bg-grid: var(--color-pink-100)
+}
+
+.bg-grid-pink-200 {
+    --color-bg-grid: var(--color-pink-200)
+}
+
+.bg-grid-pink-300 {
+    --color-bg-grid: var(--color-pink-300)
+}
+
+.bg-grid-pink-400 {
+    --color-bg-grid: var(--color-pink-400)
+}
+
+.bg-grid-pink-500 {
+    --color-bg-grid: var(--color-pink-500)
+}
+
+.bg-grid-pink-600 {
+    --color-bg-grid: var(--color-pink-600)
+}
+
+.bg-grid-pink-700 {
+    --color-bg-grid: var(--color-pink-700)
+}
+
+.bg-grid-pink-800 {
+    --color-bg-grid: var(--color-pink-800)
+}
+
+.bg-grid-pink-900 {
+    --color-bg-grid: var(--color-pink-900)
+}
+
+.bg-grid-green-100 {
+    --color-bg-grid: var(--color-green-100)
+}
+
+.bg-grid-green-200 {
+    --color-bg-grid: var(--color-green-200)
+}
+
+.bg-grid-green-300 {
+    --color-bg-grid: var(--color-green-300)
+}
+
+.bg-grid-green-400 {
+    --color-bg-grid: var(--color-green-400)
+}
+
+.bg-grid-green-500 {
+    --color-bg-grid: var(--color-green-500)
+}
+
+.bg-grid-green-600 {
+    --color-bg-grid: var(--color-green-600)
+}
+
+.bg-grid-green-700 {
+    --color-bg-grid: var(--color-green-700)
+}
+
+.bg-grid-green-800 {
+    --color-bg-grid: var(--color-green-800)
+}
+
+.bg-grid-green-900 {
+    --color-bg-grid: var(--color-green-900)
+}
+
+.bg-grid-lime-green-100 {
+    --color-bg-grid: var(--color-lime-green-100)
+}
+
+.bg-grid-lime-green-200 {
+    --color-bg-grid: var(--color-lime-green-200)
+}
+
+.bg-grid-lime-green-300 {
+    --color-bg-grid: var(--color-lime-green-300)
+}
+
+.bg-grid-lime-green-400 {
+    --color-bg-grid: var(--color-lime-green-400)
+}
+
+.bg-grid-lime-green-500 {
+    --color-bg-grid: var(--color-lime-green-500)
+}
+
+.bg-grid-lime-green-600 {
+    --color-bg-grid: var(--color-lime-green-600)
+}
+
+.bg-grid-lime-green-700 {
+    --color-bg-grid: var(--color-lime-green-700)
+}
+
+.bg-grid-lime-green-800 {
+    --color-bg-grid: var(--color-lime-green-800)
+}
+
+.bg-grid-lime-green-900 {
+    --color-bg-grid: var(--color-lime-green-900)
+}
+
+.bg-grid-yellow-100 {
+    --color-bg-grid: var(--color-yellow-100)
+}
+
+.bg-grid-yellow-200 {
+    --color-bg-grid: var(--color-yellow-200)
+}
+
+.bg-grid-yellow-300 {
+    --color-bg-grid: var(--color-yellow-300)
+}
+
+.bg-grid-yellow-400 {
+    --color-bg-grid: var(--color-yellow-400)
+}
+
+.bg-grid-yellow-500 {
+    --color-bg-grid: var(--color-yellow-500)
+}
+
+.bg-grid-yellow-600 {
+    --color-bg-grid: var(--color-yellow-600)
+}
+
+.bg-grid-yellow-700 {
+    --color-bg-grid: var(--color-yellow-700)
+}
+
+.bg-grid-yellow-800 {
+    --color-bg-grid: var(--color-yellow-800)
+}
+
+.bg-grid-yellow-900 {
+    --color-bg-grid: var(--color-yellow-900)
+}
+
+.bg-grid-orange-100 {
+    --color-bg-grid: var(--color-orange-100)
+}
+
+.bg-grid-orange-200 {
+    --color-bg-grid: var(--color-orange-200)
+}
+
+.bg-grid-orange-300 {
+    --color-bg-grid: var(--color-orange-300)
+}
+
+.bg-grid-orange-400 {
+    --color-bg-grid: var(--color-orange-400)
+}
+
+.bg-grid-orange-500 {
+    --color-bg-grid: var(--color-orange-500)
+}
+
+.bg-grid-orange-600 {
+    --color-bg-grid: var(--color-orange-600)
+}
+
+.bg-grid-orange-700 {
+    --color-bg-grid: var(--color-orange-700)
+}
+
+.bg-grid-orange-800 {
+    --color-bg-grid: var(--color-orange-800)
+}
+
+.bg-grid-orange-900 {
+    --color-bg-grid: var(--color-orange-900)
+}
+
+.bg-grid-gray-100 {
+    --color-bg-grid: var(--color-gray-100)
+}
+
+.bg-grid-gray-200 {
+    --color-bg-grid: var(--color-gray-200)
+}
+
+.bg-grid-gray-300 {
+    --color-bg-grid: var(--color-gray-300)
+}
+
+.bg-grid-gray-400 {
+    --color-bg-grid: var(--color-gray-400)
+}
+
+.bg-grid-gray-500 {
+    --color-bg-grid: var(--color-gray-500)
+}
+
+.bg-grid-gray-600 {
+    --color-bg-grid: var(--color-gray-600)
+}
+
+.bg-grid-gray-700 {
+    --color-bg-grid: var(--color-gray-700)
+}
+
+.bg-grid-gray-800 {
+    --color-bg-grid: var(--color-gray-800)
+}
+
+.bg-grid-gray-900 {
+    --color-bg-grid: var(--color-gray-900)
+}
+
+.bg-grid-gray-1000 {
+    --color-bg-grid: var(--color-gray-1000)
+}
+
+.bg-grid-red-100 {
+    --color-bg-grid: var(--color-red-100)
+}
+
+.bg-grid-red-200 {
+    --color-bg-grid: var(--color-red-200)
+}
+
+.bg-grid-red-300 {
+    --color-bg-grid: var(--color-red-300)
+}
+
+.bg-grid-red-400 {
+    --color-bg-grid: var(--color-red-400)
+}
+
+.bg-grid-red-500 {
+    --color-bg-grid: var(--color-red-500)
+}
+
+.bg-grid-red-600 {
+    --color-bg-grid: var(--color-red-600)
+}
+
+.bg-grid-red-700 {
+    --color-bg-grid: var(--color-red-700)
+}
+
+.bg-grid-red-800 {
+    --color-bg-grid: var(--color-red-800)
+}
+
+.bg-grid-red-900 {
+    --color-bg-grid: var(--color-red-900)
+} */
+
+.bg-grid {
+    background: red !important;
+}
