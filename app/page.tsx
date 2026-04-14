@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import BrandMarquee from "@/components/ui/BrandMarquee";
 import About from "@/components/AboutBro";
 import Portfolio from "@/components/Portfolio";
+import Polaroids from "@/components/Polaroids";
 // import Testimonial from "@/components/Testimonial";
 import ContactUs from "@/components/ContactUs";
-
 export default function Home() {
   return (
     <>
@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <BrandMarquee />
       <About />
+      <Polaroids />
       <Portfolio />
       {/* <Testimonial /> */}
       <ContactUs />
