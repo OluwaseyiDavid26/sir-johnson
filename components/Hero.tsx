@@ -899,8 +899,8 @@ export default function Hero() {
         style={{
           background: isLight ? "#f0f4ff" : "#090f1e",
           fontFamily: "'Outfit', sans-serif",
-          paddingTop: "100px",
-          paddingBottom: "60px",
+          paddingTop: "120px",
+          paddingBottom: "80px",
           transition: "background 0.4s ease",
         }}
       >
@@ -938,226 +938,242 @@ export default function Hero() {
           }}
         />
 
-        {/* Main layout — stacked on mobile, side-by-side on desktop */}
-        <div
-          className="relative z-10 w-full max-w-5xl mx-auto flex flex-col-reverse md:grid md:items-center gap-10 md:gap-16"
-          style={{ gridTemplateColumns: "1fr 380px" }}
-        >
-          {/* ── LEFT ── */}
-          <div className="flex flex-col gap-6 md:gap-7">
-            {/* Eyebrow */}
-            <div
-              className="hero-fade-up flex items-center gap-3 tracking-widest text-xs text-blue-400"
-              style={{
-                animationDelay: "0.05s",
-                fontFamily: "'DM Mono', monospace",
-              }}
-            >
-              <span className="block w-7 h-px bg-blue-600" />
-              WELCOME TO MY SPACE
-            </div>
-
-            {/* Headline */}
-            <div className="hero-fade-up" style={{ animationDelay: "0.15s" }}>
-              <span
-                className="block italic font-bold text-blue-400 mb-2"
-                style={{
-                  fontSize: "clamp(14px, 1.6vw, 21px)",
-                  fontFamily: "'Playfair Display', serif",
-                }}
-              >
-                Hi, I&apos;m
-              </span>
-              <h1
-                className="m-0 leading-none tracking-tight"
-                style={{
-                  fontSize: "clamp(32px, 6vw, 58px)",
-                  fontWeight: 900,
-                  fontFamily: "'Playfair Display', serif",
-                  color: isLight ? "#0f172a" : "#ffffff",
-                  transition: "color 0.4s ease",
-                }}
-              >
-                Johnson Ayanda.
-              </h1>
-              <p
-                className="mt-3 mb-0 leading-snug font-normal"
-                style={{
-                  fontSize: "clamp(13px, 1.4vw, 19px)",
-                  color: isLight ? "#334155" : "#c8d3e8",
-                  transition: "color 0.4s ease",
-                }}
-              >
-                IT Consultant &amp; Technology Service Manager
-              </p>
-            </div>
-
-            {/* Rule */}
-            <div
-              className="hero-fade-up w-10 h-0.5 bg-blue-600 rounded-sm"
-              style={{ animationDelay: "0.25s" }}
-            />
-
-            {/* Bio */}
-            <p
-              className="hero-fade-up font-light leading-relaxed m-0 max-w-md"
-              style={{
-                fontSize: 15,
-                color: isLight
-                  ? "rgba(51,65,85,0.75)"
-                  : "rgba(200,211,232,0.55)",
-                animationDelay: "0.25s",
-                transition: "color 0.4s ease",
-              }}
-            >
-              I partner with organisations to align technology with business
-              goals — overseeing IT infrastructure, driving digital
-              transformation, and delivering reliable managed services that keep
-              businesses running at their best.
-            </p>
-
-            {/* Chips */}
-            <div
-              className="hero-fade-up flex flex-wrap gap-2"
-              style={{ animationDelay: "0.35s" }}
-            >
-              {[
-                { icon: "fa-server", label: "IT Infrastructure" },
-                { icon: "fa-shield-halved", label: "Cybersecurity" },
-                { icon: "fa-gears", label: "Service Management" },
-                { icon: "fa-chart-line", label: "Digital Transformation" },
-              ].map((chip) => (
-                <span
-                  key={chip.label}
-                  className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 tracking-wider"
-                  style={{
-                    fontSize: 11,
-                    fontFamily: "'DM Mono', monospace",
-                    background: isLight
-                      ? "rgba(37,99,235,0.07)"
-                      : "rgba(255,255,255,0.04)",
-                    border: `0.5px solid ${isLight ? "rgba(37,99,235,0.18)" : "rgba(255,255,255,0.07)"}`,
-                    color: isLight ? "#1e3a8a" : "#c8d3e8",
-                    transition: "all 0.4s ease",
-                  }}
-                >
-                  <i
-                    className={`fa-solid ${chip.icon} text-blue-400`}
-                    style={{ fontSize: 10 }}
-                  />
-                  {chip.label}
-                </span>
-              ))}
-            </div>
-
-            {/* CTAs */}
-            <div
-              className="hero-fade-up flex flex-wrap items-center gap-3 pt-1"
-              style={{ animationDelay: "0.45s" }}
-            >
-              <Link
-                href="/#portfolio"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all hover:-translate-y-px cursor-pointer"
-                style={{ fontFamily: "'Outfit', sans-serif" }}
-              >
-                <i className="fa-solid fa-briefcase text-xs" />
-                View Services
-              </Link>
-
-              <a
-                href="https://drive.google.com/uc?export=download&id=1x15lcT3SKcAxV0cMQH_mFFbTme814Gjm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all cursor-pointer"
-                style={{
-                  fontFamily: "'Outfit', sans-serif",
-                  color: isLight ? "#334155" : "#c8d3e8",
-                  background: "transparent",
-                  border: `0.5px solid ${isLight ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.14)"}`,
-                  textDecoration: "none",
-                  transition: "all 0.4s ease",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.background =
-                    isLight ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.04)";
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor =
-                    isLight ? "rgba(0,0,0,0.28)" : "rgba(255,255,255,0.26)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.background =
-                    "transparent";
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor =
-                    isLight ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.14)";
-                }}
-              >
-                <i className="fa-solid fa-file-arrow-down text-xs" />
-                Download CV
-              </a>
-            </div>
+        {/* ── MOBILE layout: text then image stacked ── */}
+        {/* ── DESKTOP layout: side by side grid ── */}
+        <div className="relative z-10 w-full max-w-5xl mx-auto">
+          {/* Desktop grid */}
+          <div
+            className="hidden md:grid items-center gap-16"
+            style={{ gridTemplateColumns: "1fr 380px" }}
+          >
+            {/* LEFT */}
+            <LeftContent isLight={isLight} />
+            {/* RIGHT */}
+            <RightContent isLight={isLight} />
           </div>
 
-          {/* ── RIGHT ── */}
-          <div className="hero-fade-in flex flex-col gap-3">
-            {/* Photo */}
-            <div
-              className="relative rounded-2xl overflow-hidden"
-              style={{
-                border: `0.5px solid ${isLight ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.07)"}`,
-                background: isLight ? "#dde6f5" : "#101828",
-                height: "clamp(240px, 45vw, 340px)",
-                transition: "all 0.4s ease",
-              }}
-            >
-              <img
-                src="https://lh3.googleusercontent.com/d/1LPTKCin0Y8alB-rIzLurevYN26S_AUWX"
-                alt="Johnson Ayanda"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-
-            {/* Availability badge */}
-            <div
-              className="rounded-2xl px-4 py-3 flex items-center gap-3"
-              style={{
-                background: isLight
-                  ? "rgba(22,163,74,0.07)"
-                  : "rgba(22,163,74,0.08)",
-                border: `0.5px solid ${isLight ? "rgba(22,163,74,0.25)" : "rgba(22,163,74,0.2)"}`,
-                transition: "all 0.4s ease",
-              }}
-            >
-              <span
-                className="pulse-dot flex-shrink-0 w-2.5 h-2.5 rounded-full"
-                style={{ background: "#4ade80" }}
-              />
-              <div>
-                <p
-                  className="font-medium text-sm m-0"
-                  style={{
-                    color: isLight ? "#166534" : "#86efac",
-                    transition: "color 0.4s ease",
-                  }}
-                >
-                  Available for Consulting
-                </p>
-                <p
-                  className="m-0 mt-0.5 tracking-widest"
-                  style={{
-                    fontSize: 10,
-                    fontFamily: "'DM Mono', monospace",
-                    color: isLight
-                      ? "rgba(22,101,52,0.6)"
-                      : "rgba(134,239,172,0.5)",
-                    transition: "color 0.4s ease",
-                  }}
-                >
-                  OPEN TO NEW ENGAGEMENTS
-                </p>
-              </div>
-            </div>
+          {/* Mobile stack: text first, image second */}
+          <div className="flex flex-col gap-8 md:hidden">
+            <LeftContent isLight={isLight} />
+            <RightContent isLight={isLight} />
           </div>
         </div>
       </section>
     </>
+  );
+}
+
+function LeftContent({ isLight }: { isLight: boolean }) {
+  return (
+    <div className="flex flex-col gap-6">
+      {/* Eyebrow */}
+      <div
+        className="hero-fade-up flex items-center gap-3 tracking-widest text-xs text-blue-400"
+        style={{ animationDelay: "0.05s", fontFamily: "'DM Mono', monospace" }}
+      >
+        <span className="block w-7 h-px bg-blue-600" />
+        WELCOME TO MY SPACE
+      </div>
+
+      {/* Headline */}
+      <div className="hero-fade-up" style={{ animationDelay: "0.15s" }}>
+        <span
+          className="block italic font-bold text-blue-400 mb-2"
+          style={{
+            fontSize: "clamp(14px, 1.6vw, 21px)",
+            fontFamily: "'Playfair Display', serif",
+          }}
+        >
+          Hi, I&apos;m
+        </span>
+        <h1
+          className="m-0 leading-none tracking-tight"
+          style={{
+            fontSize: "clamp(36px, 5vw, 58px)",
+            fontWeight: 900,
+            fontFamily: "'Playfair Display', serif",
+            color: isLight ? "#0f172a" : "#ffffff",
+            transition: "color 0.4s ease",
+          }}
+        >
+          Johnson Ayanda.
+        </h1>
+        <p
+          className="mt-3 mb-0 leading-snug font-normal"
+          style={{
+            fontSize: "clamp(14px, 1.4vw, 19px)",
+            color: isLight ? "#334155" : "#c8d3e8",
+            transition: "color 0.4s ease",
+          }}
+        >
+          IT Consultant &amp; Technology Service Manager
+        </p>
+      </div>
+
+      {/* Rule */}
+      <div
+        className="hero-fade-up w-10 h-0.5 bg-blue-600 rounded-sm"
+        style={{ animationDelay: "0.25s" }}
+      />
+
+      {/* Bio */}
+      <p
+        className="hero-fade-up font-light leading-relaxed m-0"
+        style={{
+          fontSize: 15,
+          color: isLight ? "rgba(51,65,85,0.75)" : "rgba(200,211,232,0.55)",
+          animationDelay: "0.25s",
+          transition: "color 0.4s ease",
+          maxWidth: "480px",
+        }}
+      >
+        I partner with organisations to align technology with business goals —
+        overseeing IT infrastructure, driving digital transformation, and
+        delivering reliable managed services that keep businesses running at
+        their best.
+      </p>
+
+      {/* Chips */}
+      <div
+        className="hero-fade-up flex flex-wrap gap-2"
+        style={{ animationDelay: "0.35s" }}
+      >
+        {[
+          { icon: "fa-server", label: "IT Infrastructure" },
+          { icon: "fa-shield-halved", label: "Cybersecurity" },
+          { icon: "fa-gears", label: "Service Management" },
+          { icon: "fa-chart-line", label: "Digital Transformation" },
+        ].map((chip) => (
+          <span
+            key={chip.label}
+            className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 tracking-wider"
+            style={{
+              fontSize: 12,
+              fontFamily: "'DM Mono', monospace",
+              background: isLight
+                ? "rgba(37,99,235,0.07)"
+                : "rgba(255,255,255,0.04)",
+              border: `0.5px solid ${isLight ? "rgba(37,99,235,0.18)" : "rgba(255,255,255,0.07)"}`,
+              color: isLight ? "#1e3a8a" : "#c8d3e8",
+              transition: "all 0.4s ease",
+            }}
+          >
+            <i
+              className={`fa-solid ${chip.icon} text-blue-400`}
+              style={{ fontSize: 10 }}
+            />
+            {chip.label}
+          </span>
+        ))}
+      </div>
+
+      {/* CTAs */}
+      <div
+        className="hero-fade-up flex flex-wrap items-center gap-3 pt-1"
+        style={{ animationDelay: "0.45s" }}
+      >
+        <Link
+          href="/#portfolio"
+          className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all hover:-translate-y-px cursor-pointer"
+          style={{ fontFamily: "'Outfit', sans-serif" }}
+        >
+          <i className="fa-solid fa-briefcase text-xs" />
+          View Services
+        </Link>
+
+        <a
+          href="https://drive.google.com/uc?export=download&id=1x15lcT3SKcAxV0cMQH_mFFbTme814Gjm"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-medium transition-all cursor-pointer"
+          style={{
+            fontFamily: "'Outfit', sans-serif",
+            color: isLight ? "#334155" : "#c8d3e8",
+            background: "transparent",
+            border: `0.5px solid ${isLight ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.14)"}`,
+            textDecoration: "none",
+            transition: "all 0.4s ease",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.background = isLight
+              ? "rgba(0,0,0,0.04)"
+              : "rgba(255,255,255,0.04)";
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = isLight
+              ? "rgba(0,0,0,0.28)"
+              : "rgba(255,255,255,0.26)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.background =
+              "transparent";
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = isLight
+              ? "rgba(0,0,0,0.15)"
+              : "rgba(255,255,255,0.14)";
+          }}
+        >
+          <i className="fa-solid fa-file-arrow-down text-xs" />
+          Download CV
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function RightContent({ isLight }: { isLight: boolean }) {
+  return (
+    <div className="hero-fade-in flex flex-col gap-3">
+      {/* Photo — full width on mobile, fixed height on desktop */}
+      <div
+        className="relative rounded-2xl overflow-hidden w-full"
+        style={{
+          border: `0.5px solid ${isLight ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.07)"}`,
+          background: isLight ? "#dde6f5" : "#101828",
+          height: "340px",
+          transition: "all 0.4s ease",
+        }}
+      >
+        <img
+          src="https://lh3.googleusercontent.com/d/1LPTKCin0Y8alB-rIzLurevYN26S_AUWX"
+          alt="Johnson Ayanda"
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
+
+      {/* Availability badge */}
+      <div
+        className="rounded-2xl px-4 py-3 flex items-center gap-3"
+        style={{
+          background: isLight ? "rgba(22,163,74,0.07)" : "rgba(22,163,74,0.08)",
+          border: `0.5px solid ${isLight ? "rgba(22,163,74,0.25)" : "rgba(22,163,74,0.2)"}`,
+          transition: "all 0.4s ease",
+        }}
+      >
+        <span
+          className="pulse-dot flex-shrink-0 w-2.5 h-2.5 rounded-full"
+          style={{ background: "#4ade80" }}
+        />
+        <div>
+          <p
+            className="font-medium text-sm m-0"
+            style={{
+              color: isLight ? "#166534" : "#86efac",
+              transition: "color 0.4s ease",
+            }}
+          >
+            Available for Consulting
+          </p>
+          <p
+            className="m-0 mt-0.5 tracking-widest"
+            style={{
+              fontSize: 10,
+              fontFamily: "'DM Mono', monospace",
+              color: isLight ? "rgba(22,101,52,0.6)" : "rgba(134,239,172,0.5)",
+              transition: "color 0.4s ease",
+            }}
+          >
+            OPEN TO NEW ENGAGEMENTS
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
