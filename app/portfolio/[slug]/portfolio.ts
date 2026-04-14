@@ -145,7 +145,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "As the director of Jowis Studio, I was responsible for leading a team of talented designers and developers to design and build the entire website for The Hive Incubator. This project involved working closely with the client to understand their vision and goals, and then translating that into a functional and visually appealing website. I managed the team's workflow, ensuring that tasks were completed on time and to a high standard. I also worked closely with the developers to ensure that the website was built with the latest technologies and best practices. The final result was a website that exceeded the client's expectations and helped to establish The Hive Incubator as a leading startup incubator in Nigeria.",
     link: "https://thehiveincubator.com/",
     stack: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-    date: "2025",
+    // date: "2025",
     type: "Website",
     client: "The Hive Incubator",
     main_image:
@@ -159,7 +159,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/1BwusHHAupwvbHDikguVrvTNoVVwuu71X",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/1SnfLxZzTKw2AAKVZSOLbBR7HaRWPgA8g",
+      "https://lh3.googleusercontent.com/d/1_NsB7Z4VOQPAgYbqWAVGIA7VVmA6DDKz",
   },
   {
     title: "Anmut Website",
@@ -170,7 +170,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "As the director of Jowis Studio, I was responsible for leading a team of talented designers and developers to deliver exactly what Anmut wanted. I managed the team's workflow, ensuring that tasks were completed on time and to a high standard. I also worked closely with the developers to ensure that the website was built with the latest technologies and best practices. My experience in managing teams and projects helped me to ensure that the final product was of high quality and exceeded the client's expectations.",
     link: "https://www.anmutdevelopers.com/",
     stack: ["Next.js", "React", "JavaScript"],
-    date: "2025",
+    // date: "2025",
     type: "Website",
     client: "Anmut Developers",
     main_image:
@@ -181,7 +181,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/19XJmkvJ0Djk2PuIse2VLXabOGPIfdcqA",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/10SJ0rfr2RmwjEIFL-y7BQv1sRjw1VdcQ",
+      "https://lh3.googleusercontent.com/d/1SnfLxZzTKw2AAKVZSOLbBR7HaRWPgA8g",
   },
   {
     title: "Square Farms's Website",
@@ -192,7 +192,7 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "At Jowis Studio, I led a talented team of designers and developers to build the website for Square Farms Africa. We worked closely together to ensure that the final product was of high quality and exceeded the client's expectations. My experience in managing teams and projects helped me to ensure that the final product was delivered on time and to a high standard.",
     link: "https://www.squarefarms.africa/",
     stack: ["Next.js", "React", "JavaScript"],
-    date: "2025",
+    // date: "2025",
     type: "Website",
     client: "Square Farms Africa",
     main_image:
@@ -202,6 +202,6 @@ export const defaultPortfolioItems: PortfolioItemType[] = [
       "https://lh3.googleusercontent.com/d/1NX5Qg-9I7qWGss109ciDBoDYepEaAW-f",
     ],
     mock_up:
-      "https://lh3.googleusercontent.com/d/1_NsB7Z4VOQPAgYbqWAVGIA7VVmA6DDKz",
+      "https://lh3.googleusercontent.com/d/10SJ0rfr2RmwjEIFL-y7BQv1sRjw1VdcQ",
   },
 ];
