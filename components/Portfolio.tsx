@@ -462,9 +462,9 @@ export default function ServicesPage() {
                     <span className="text-[11px] font-mono tracking-wider px-3 py-1 rounded-full bg-blue-600/10 text-blue-400 border border-blue-600/20">
                       {item.type}
                     </span>
-                    <span className="text-[11px] font-mono tracking-wider px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 text-[#5a5a5a] dark:text-white/50 border border-black/10 dark:border-white/10">
+                    {/* <span className="text-[11px] font-mono tracking-wider px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 text-[#5a5a5a] dark:text-white/50 border border-black/10 dark:border-white/10">
                       {item.date}
-                    </span>
+                    </span> */}
                     <span className="text-[11px] font-mono tracking-wider px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 text-[#5a5a5a] dark:text-white/50 border border-black/10 dark:border-white/10">
                       {item.client}
                     </span>
